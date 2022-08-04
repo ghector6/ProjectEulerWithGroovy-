@@ -16,17 +16,20 @@ for(i = 2; i < 10; i++){
 
 n1 = 1
 n2 = 2
-tot = 0
-while (n1 <= 4000000) {
+List tot = [] // Adding a list to save each number from fib sequence 
+while (n1 <= 4000000) { 
     // println"$num1 , $num2"
-    if (n1%2==0) {
-        tot += n1
+    if (n1 % 2 == 0) {
+        tot << n1  //left shift operator 
     }
-    (n1, n2) = [n2, n1 +n2]
+    (n1, n2) = [n2, n1 + n2]
 }
 
-println "sum: $tot "
-
+def sum = 0
+tot.each { num -> // using Each method whit a closure to sum values 
+    sum += num 
+}
+println sum
 
 
 
