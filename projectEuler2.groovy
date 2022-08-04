@@ -26,9 +26,7 @@ while (n1 <= 4000000) {
 }
 
 def sum = 0
-tot.each { num -> // using Each method whit a closure to sum values 
-    sum += num 
-}
+tot.collect { num -> sum+= num} // aading collect method to get sum 
 println sum
 
 
