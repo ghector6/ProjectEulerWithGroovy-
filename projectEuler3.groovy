@@ -12,4 +12,4 @@ class PrimeFactor {
     }
 }
 
-PrimeFactor.getPrimeFactors(600851475143)
+PrimeFactor.getPrimeFactors(600851475143 )
