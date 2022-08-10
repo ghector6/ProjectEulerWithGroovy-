@@ -5,10 +5,10 @@ class Palindrome{
         List multList = []
         for(def i = 1; i < range; i++){
             for(def f = 1; f < range; f++){
-                println multList << i * f
-            }
-            
+                multList << i * f
+            }                        
         }
+        println multList
     }
 }
 
