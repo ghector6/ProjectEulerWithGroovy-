@@ -3,8 +3,8 @@ class Palindrome{
 
     static multiplr(range){
         List multList = []
-        for(def i = 1; i < range; i++){
-            for(def f = 1; f < range; f++){
+        for(def i = 1; i <= range; i++){
+            for(def f = 1; f <= range; f++){
                 multList << i * f
             }                        
         }
@@ -12,4 +12,4 @@ class Palindrome{
     }
 }
 
-Palindrome.multiplr(10)
+Palindrome.multiplr(99)
