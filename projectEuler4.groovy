@@ -8,7 +8,7 @@ class Palindrome{
                 multList << i * f
             }                        
         }
-        println multList
+        println multList.max()
     }
 }
 
