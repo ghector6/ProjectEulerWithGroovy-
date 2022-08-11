@@ -10,7 +10,7 @@ class Palindrome{
             }                        
         }
         reversedList = multList.join(", ").reverse().split(",").collect{ it as int}
-        //println multList.intersect(reversedList).max()
+        println multList.intersect(reversedList).max()
         
         //println multList.max()
     }
