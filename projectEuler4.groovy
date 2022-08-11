@@ -8,7 +8,9 @@ class Palindrome{
                 multList << i * f
             }                        
         }
-        println multList.join(", ").toString()        
+        println multList.join(", ").reverse()
+        
+        //println multList.max()
     }
     
 }
