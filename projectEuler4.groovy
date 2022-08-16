@@ -9,16 +9,13 @@ class Palindrome {
                 def numString = res.toString().reverse()
                 if(numString as Integer == res){
                     def parsedNumStr = numString as Integer
-                    arr << parsedNumStr
-                    
-                }
-                
+                    arr << parsedNumStr                    
+                }                
             }
-
         }
-        println arr
-        
+        println arr.max()        
     }
 }
 
-Palindrome.multplyr(10)
+Palindrome.multplyr(100)
+Palindrome.multplyr(1000)
