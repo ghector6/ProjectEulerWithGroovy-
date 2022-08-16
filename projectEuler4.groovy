@@ -1,20 +1,19 @@
-class Palindrome{
-     
+class Palindrome {
+    static multplyr(range){
+        def res = 0
+        List arr = []
 
-    static multiplr(range){
-        def multList = []
-        def reversedList = []
-        for(def i = 1; i <= range; i++){
-            for(def f = 1; f <= range; f++){
-                multList << i * f
-            }                        
+        for(def i = 1; i < range; i++){
+            for(def j = 1; j < range; j++){
+                res = i*j
+                def numString = res.toString().reverse()
+                println numString.class.name
+                
+            }
+
         }
-        reversedList = multList.join(", ").reverse().split(",").collect{ it as int}
-        println multList.intersect(reversedList).max()
         
-        //println multList.max()
     }
-    
 }
 
-Palindrome.multiplr(10)
+Palindrome.multplyr(10)
