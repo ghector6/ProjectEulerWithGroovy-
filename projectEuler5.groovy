@@ -10,7 +10,8 @@ class Smallest {
             flag = false
         }     
 
-       println res.class.name 
+       println res.class.name
+       println res 
     }
 }
 
