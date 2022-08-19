@@ -10,8 +10,8 @@ class Smallest {
             flag = false
         }     
 
-       println res  
+       println res.class.name 
     }
 }
 
-Smallest.finder().toString()
+Smallest.finder()
