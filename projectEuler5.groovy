@@ -1,5 +1,5 @@
 class Smallest {
-    static long finder(){
+    static  finder(){
         boolean flag = true
         long  res = 0;
 
